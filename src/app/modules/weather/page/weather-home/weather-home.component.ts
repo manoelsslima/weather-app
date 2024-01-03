@@ -33,8 +33,6 @@ export class WeatherHomeComponent implements OnInit, OnDestroy {
       next: (response) => {
         // se po response existe
         response && (this.weatherData = response);
-        console.log(this.weatherData);
-        console.log(this.weatherData.main.temp);
       },
       error: (error) => console.log(error),
     })
